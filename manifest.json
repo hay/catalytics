@@ -1,11 +1,11 @@
 {
   "manifest_version": 2,
   "name": "Catalytics",
-  "description": "Replaces people on the Google Analytics homepage with surly looking cats.",
-  "version": "1.0",
+  "description": "Replaces people on the Google Analytics / Marketing Platform homepage with surly looking cats.",
+  "version": "1.2",
   "content_scripts": [
     {
-      "matches": ["*://*/analytics/"],
+      "matches": ["*://*/analytics/", "*://marketingplatform.google.com/*"],
       "js": ["app.js"]
     }
   ],
